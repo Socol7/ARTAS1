@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mākslas Galerija</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="main-title">ART ACADEMY SILVA</h1>
+    <p class="subtitle">Online Portrait Orders · Classical and Digital Art Courses · Web Applications for Creative Learning</p>
+  </header>
+
+  <!-- KARUSELIS -->
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide">
+        <img src="images/street1.jpg" alt="Street 1">
+        <div class="caption">
+          <h2 class="delay-0">Street Composition</h2>
+          <p class="fade-delay-0">Noise transformed into light and lines.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/street2.jpg" alt="Street 2">
+        <div class="caption">
+          <h2 class="delay-1">Silence between contrasts</h2>
+          <p class="fade-delay-1">Light cuts through darkness like a thought into the unknown.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/city-seagulls.jpg" alt="City Seagulls">
+        <div class="caption">
+          <h2 class="delay-2">City Seagulls</h2>
+          <p class="fade-delay-2">Seagulls float like echoes of emotion above the city.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTRETU SADAĻA -->
+  <div class="section center">
+    <button id="togglePortraitsBtn">PORTRAIT ORDERS</button>
+  </div>
+
+  <div id="portraitSection" class="section" style="display:none;">
+    <h2>Portrait Types</h2>
+    <p>Select a style to see details and examples:</p>
+
+    <div class="portrait-buttons">
+      <button class="style-btn" data-target="oil">Oil Portraits</button>
+      <button class="style-btn" data-target="digital">Digital Portraits</button>
+      <button class="style-btn" data-target="classical">Classical</button>
+      <button class="style-btn" data-target="abstract">Abstract</button>
+      <button class="style-btn" data-target="expression">Expression</button>
+      <button class="style-btn" data-target="academical">Academical</button>
+      <button class="style-btn" data-target="3d">3D Portraits</button>
+    </div>
+
+    <div id="portraitDetails" class="portrait-details"></div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
